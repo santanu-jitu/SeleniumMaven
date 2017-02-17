@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+
+<suite name="LearningTestNG">
+    
+   
+    
+  
+  
+   <test name="Login Test">
+    
+    <classes>
+      <class name="LoginTest"/>
+     
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+   <test name="Dependency Test">
+    <classes>
+            <class name="TestDependency"/>
+     
+    </classes>
+  </test> <!-- Test -->
+  
+  
+   <test name="Validate Titles Test">
+    <classes>
+     
+      <class name="ValidateTitleTest"/>
+  
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="Priority Test">
+      
+       <groups>
+    <run>
+      <include name="sanity"/>
+    </run>
+  </groups>
+      
+      
+    <classes>
+
+      <class name="TestPriority"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+</suite> <!-- Suite -->
